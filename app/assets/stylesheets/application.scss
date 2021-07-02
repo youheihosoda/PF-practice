@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+.main-container {
+  background-image:  image-url('studyimg.jpeg');;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login_field{
+  position: absolute;
+  padding-left:1100px;
+  padding-top:400px;
+  color:white;
+}
+
+.sign_up_field{
+  position: absolute;
+  padding-left:1100px;
+  padding-top:400px;
+  color:white;
+}
+
+.bg-warning{
+ background-color: #CD853F !important;
+
+}
+
+body{
+  background-color: #FFFFDD
+}
+
+.login_font{
+  position: absolute;
+  color:white;
+  font-size:80px;
+  padding-left:900px;
+  padding-top:230px;
+}
+
+.guset_login{
+  background-color:black;
+  font-size:20px;
+  margin:10px;
+  width:190px;
+}
+
+.admin_login{
+  background-color:white;
+  font-size:20px;
+  margin:10px;
+  padding:10px;
+  width:180px;
+}
+
+.search_box{
+   text-align:right;
+}
+
+.navbar-toggler {
+  display: block;
+  margin: 0 0 0 auto;
+}

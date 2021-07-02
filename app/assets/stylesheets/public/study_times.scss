@@ -1,0 +1,190 @@
+// Place all the styles related to the public/study_times controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.icon{
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width: 200px;  /* 縦横を同じ値にする */
+  height: 200px;  /* 縦横を同じ値にする */
+  object-fit: cover; /* 縦横比固定したまま上2つの縦横の範囲内に収まるように配置する */
+}
+
+.timebtn{
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+  background: #ff8181;
+  color: white;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #bd6565;
+  transition: .4s;
+  margin:40px 0px;
+  font-size:26px;
+}
+
+.timebtn:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+  padding:20px;
+}
+
+
+
+.tweet{
+    margin: 15px;
+    max-height: 1000px;
+    color: white;
+    background-color: #114400;
+    border-bottom: solid 6px #B8860B;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    font-size: 17px;
+    word-break : break-all;
+}
+
+
+.tweet_icon{
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width: 40px;  /* 縦横を同じ値にする */
+  height: 40px;  /* 縦横を同じ値にする */
+  object-fit: cover; /* 縦横比固定したまま上2つの縦横の範囲内に収まるように配置する */
+}
+
+.post_img{
+   display:flex;
+   padding: 20px 20px;
+}
+
+.profile{
+  margin-top:20px;
+}
+
+.time{
+margin: 2em auto;
+padding: 8px;
+width: 100%;
+color: #606060;
+border: 2px solid black;
+background-color: #fff;
+box-shadow: -2px 5px 5px #ceb4a5;
+border-radius: 15px;
+}
+
+.learning{
+margin: 2em auto;
+padding: 8px;
+width: 100%;
+color: #606060;
+border: 2px solid black;
+background-color: #fff;
+box-shadow: -2px 5px 5px #ceb4a5;
+border-radius: 15px;
+}
+
+.text{
+margin: 2em auto;
+padding: 8px;
+width: 100%;
+color: #606060;
+border: 2px solid black;
+background-color: #fff;
+box-shadow: -2px 5px 5px #ceb4a5;
+border-radius: 15px;
+}
+
+.texts{
+padding: 3px;
+margin: 2em auto;
+width:100%;
+color: #696969;
+background: #ffffe0;
+border-left: solid 15px red;
+}
+
+.comment{
+padding: 3px 5px;
+margin-left: 10px;
+text-align: center;
+margin: 2em auto;
+width:50%;
+color: #696969;
+background: white;
+border-bottom: solid 1px #B8860B;
+}
+
+.introduction{
+  display: inline-block;
+  margin: 1.5em 0;
+  width: 250px;
+  height: 145px;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
+  top: 420px; /* 基準の位置を画面の一番上に指定する */
+  word-break : break-all;
+
+}
+
+.prointo{
+  margin-top: 40px;
+}
+
+.rank{
+  margin-top: 70px;
+  width: 400px;
+  height: 450px;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  background: #006633; /* ボックス背景色 */
+  color: #fff; /* 文章色 */
+  border: 8px solid #b2771f; /* 枠線 */
+  border-radius: 3px; /* 角の丸み */
+  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+
+.canvas{
+  margin: 300px 200px;
+  max-width: 800px;
+}
+
+.title{
+  margin: 10px 50px;
+}
+
+.post{
+  position: absolute;
+  margin: 50px 750px;
+}
+
+.study_method_field{
+   width: 100%;
+  height: 180px;
+  resize: none;
+}
+
+.sub{
+  margin:10px 120px;
+}
+
+.text_edit_field2{
+  margin-bottom: 10px;
+}
+
+.post_comment{
+  margin: 100px 100px;
+}
+
+.contactbtn{
+  margin-top: 10px;
+}

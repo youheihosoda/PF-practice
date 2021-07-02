@@ -1,0 +1,35 @@
+<h1>会員一覧</h1>
+<%= render 'admin/searchs/form' %>
+<table class="table user_index">
+   <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">名前</th>
+      <th scope="col">Email</th>
+      <th scope="col">登録日</th>
+      <th scope="col">会員ステータス</th>
+    </tr>
+  </thead>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= link_to admin_user_path(user.id) do %>
+              <%= user.id %>
+            <% end %>
+        </td>
+        <td><%= user.name %></td>
+        <td><%= user.email %>
+        <td><%= user.created_at%></td>
+            <%if user.is_deleted == false %>
+              <td>有</td>
+            <% else %>
+              <td>無</td>
+            <%end%>
+      </tr>
+    <% end %>
+</table>
+
+
+
+
+
+
