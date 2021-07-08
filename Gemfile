@@ -72,12 +72,10 @@ gem 'font-awesome-sass', '~> 5.13'
 
 gem 'dotenv-rails'
 group :production do
- gem 'mysql2'
+  gem 'mysql2'
 end
 
 gem "chartkick" # 追記
-
-gem 'dotenv-rails'
 
 gem 'pry-rails'
 
