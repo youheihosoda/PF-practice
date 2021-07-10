@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :study_times, dependent: :destroy
   has_many :learning_details, dependent: :destroy
   has_many :post_comments, dependent: :destroy
+  has_many :study_time_texts, dependent: :destroy
   # 自分がフォローされる（被フォロー）側の関係性
   has_many :reverse_of_relationships, class_name: "Relationship", foreign_key: "followed_id", dependent: :destroy
   # 自分がフォローする（与フォロー）側の関係性
@@ -37,4 +38,6 @@ class User < ApplicationRecord
 
   validates :introduction, length: { maximum: 160 }
   validates :name, length: { maximum: 12 }
+
+
 end
