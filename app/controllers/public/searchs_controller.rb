@@ -10,6 +10,7 @@ class Public::SearchsController < ApplicationController
     # @model, @content, @methodを代入した、
     # search_forを@recordsに代入。
     @records = search_for(@model, @content, @method)
+
   end
 
   private
