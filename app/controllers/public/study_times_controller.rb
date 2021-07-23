@@ -3,7 +3,9 @@ class Public::StudyTimesController < ApplicationController
     @day = params[:day] ? Date.parse(params[:day]) : Time.zone.today
     beginning_of_month = @day.beginning_of_month
     end_of_month = @day.end_of_month
-    @study_times = StudyTime.where("updated_at >= ? and updated_at <= ? ", beginning_of_month, end_of_month).where(user_id: current_user.id).where.not(end_time: nil).where.not(learning_detail: nil)
+    @study_times = StudyTime.where(
+    "updated_at >= ? and updated_at <= ? ", beginning_of_month, end_of_month).where(
+    user_id: current_user.id).where.not(end_time: nil).where.not(learning_detail: nil)
     @study_time_hash = {}
     @study_times.each do |study_time|
       if @study_time_hash[study_time.learning_detail.detail]
